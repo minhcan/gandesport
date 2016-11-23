@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+    <header>
+        <title>Header</title>
+        <description></description>
+        <module>
+            <title>phone</title>
+            <field>
+                <name>widget-phone</name>
+                <label>Content</label>
+                <type>textarea</type>
+                <lang>0</lang>
+                <default><![CDATA[
+                    <div class="phone pull-right">
+                        <i class="pull-left zmdi zmdi-whatsapp"></i>
+                        <span class="pull-left">
+                            0123 456 789
+                            <small>customer services</small>
+                        </span>
+                    </div>
+                ]]></default>
+            </field>
+        </module>
+    </header>
+    <footer>
+        <title>Footer</title>
+        <description></description>
+        <module>
+            <title>Contact</title>
+            <field>
+                <name>widget-contact</name>
+                <label>Content</label>
+                <type>textarea</type>
+                <lang>0</lang>
+                <default>
+                    <![CDATA[
+                        <div class="panel-heading">
+                            <h5 class="panel-title">Showroom</h5>
+                        </div>
+                        <div class="phone">(+844) 123 456 78 90</div>
+                        <p>123 Third Street Fifth avenue, Manhattan, New York, USA</p>
+                        <div class="mail-contact">contact@company.com</div>
+                    ]]>     
+                </default>
+            </field>
+        </module>
+        <module>
+            <title>Social</title>
+            <field>
+                <name>widget-social</name>
+                <label>Content</label>
+                <type>textarea</type>
+                <lang>0</lang>
+                <default>
+                    <![CDATA[
+                        <div class="social-icon-list">
+                            <ul class="list-inline">
+                                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>                          
+                                <li><a class="youtube" href="#"><i class="fa fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    ]]>
+                </default>
+            </field>
+        </module>
+        <module>
+            <title>Paypal</title>
+            <field>
+                <name>widget-paypal</name>
+                <label>Content</label>
+                <type>textarea</type>
+                <lang>0</lang>
+                <default><![CDATA[
+                    <img alt="payment" src="image/catalog/payment.png">
+                ]]></default>
+            </field>
+        </module>  
+    </footer>
+</theme>

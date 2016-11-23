@@ -1,0 +1,33 @@
+//newleter
+.form-newsletter {
+    .description {
+        padding:10px 0;
+    }
+	.email {
+        background: none;
+        border:none;
+	}
+    .input-group{
+        border: 1px solid #8e644c;
+        @include border-radius(38px);
+        .btn{
+            border: none;
+            @include border-radius(38px);
+            padding: 5px 30px;
+            font-size: 14px;
+        }
+    }
+}
+
+.valid {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 10;
+    @include rtl-left(0);
+    .alert {
+        width: auto;
+        margin-top: 20px;
+        @include rtl-text-align-left();
+    }
+}
