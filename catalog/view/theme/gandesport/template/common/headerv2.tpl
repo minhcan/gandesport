@@ -24,7 +24,7 @@
     <div class="dropdown-toggle-button" data-target=".toggle-overlay-container">x </div>
 </div>
 <!-- header -->
-<header class="header header-v2">
+<header id="header" class="header header-v2">
     <div class="container">
         <div class="inner">
             <div class="row">                                         
@@ -89,17 +89,17 @@
                           </div>
                       </div>
                       <!--The End autosearch-->
-                      <div id="header-cart" class="pull-right col-lg-1 col-md-1 col-sm-12">
+                      <div id="header-cart" class="pull-right col-lg-1 col-md-1">
                           <div class="row">     
                             <?php echo $cart; ?>
                           </div>
                       </div>
+                      <button data-toggle="offcanvas" class="btn btn-primary canvas-menu hidden-lg hidden-md margin-9" type="button"><span class="fa fa-bars"></span></button> 
                     </div>   
                   </div>
                   <!--Megamenu-->  
                   <div id="menupanel" class="headerv2-megamenu col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
-                      <div class="row">
-                          <button data-toggle="offcanvas" class="btn btn-primary canvas-menu hidden-lg hidden-md margin-9" type="button"><span class="fa fa-bars"></span></button>                 
+                      <div class="row">                
                           <?php require( ThemeControlHelper::getLayoutPath( 'common/parts/mainmenu.tpl' ) ); ?>                                                  
                       </div>                
                   </div>                                      

@@ -471,13 +471,12 @@
 .widget-images{
     background: none;
     border:none;
-}
-.panel{
-    &.widget-images{
+    &.image-banner{
         margin-top: -50px;
-        z-index: 500;
+        z-index: 20;
     }
-}  
+}
+
 /* Gallery */
 .widget-gallery-list{
     text-align: center;
@@ -569,8 +568,8 @@
             display: table;
             width: 100%;
             position: relative;
-            @include rtl-left(20%);
-            height: 100%;
+            @include rtl-left(5%);
+            height: 85%;
             max-width: 600px;
 
         }
@@ -589,6 +588,21 @@
                 @media (max-width: 768px) {
                     font-size: 30px;
                 }
+                .text2{
+                    color: $orangered;
+                }
+            }
+            .widget-heading, .text3{
+                font-style: italic;
+                font-weight: 400;
+                color: $white;
+                font-size: 40px;
+                @media (max-width: 768px) {
+                    font-size: 30px;
+                }
+            }
+            .text4{
+                font-style: italic;
             }
         }
     }

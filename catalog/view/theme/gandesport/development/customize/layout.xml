@@ -42,6 +42,22 @@
                 <text>Header v2</text>
                 <value>headerv2</value>
             </option>
+            <option>
+                <text>Header v3</text>
+                <value>headerv3</value>
+            </option>
+            <option>
+                <text>Header v4</text>
+                <value>headerv4</value>
+            </option>
+            <option>
+                <text>Header v5</text>
+                <value>headerv5</value>
+            </option>
+            <option>
+                <text>Header v6</text>
+                <value>headerv6</value>
+            </option>
         </item>
 
 		<item>

@@ -317,6 +317,7 @@ header {
             i{ @include rtl-margin-right(5px);}
         }
     }
+
     .autosearch-wrapper{
         margin: 0;
         .search_query{
@@ -348,8 +349,16 @@ header {
         background-color: $white;
     }
     #logo-theme, #topbar, #header-main, #menupanel{
-        z-index: 9999;
+        
     }
+}
+.page-home #header .container,
+.page-common-home #header .container {
+  z-index: 99;
+  position: relative;
+}
+#topbar .dropdown-menu {
+  z-index: 9999;
 }
 .pav-container{
     &.pav-slideshow{
@@ -488,7 +497,9 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.pav-product-tabs, .pav-carousel-tabs {
+    overflow: hidden;
+}
 /*-----------Breadcrumbs---------*/
 .breadcrumb{
     background: url("#{$image-theme-path}pattern-breadcrumb.png") repeat 0 0;

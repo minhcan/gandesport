@@ -23,7 +23,7 @@
 	$button_cart = $this->language->get('button_cart');
 ?>
 
-<div class="panel panel-default nopadding">
+<div class="panel panel-default product-grid nopadding">
 	<?php if( $show_title ) { ?>
 	<div class="widget-heading panel-heading hightlight space-10">
 		<h3 class="panel-title"><?php echo $heading_title?></h3>

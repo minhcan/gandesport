@@ -7,27 +7,16 @@
 if(!empty($first_product)) {
 ?>
 <div class="product-block product-v2">
-    <div class="image">
-         <!-- Sale lable -->
-        <?php if( $first_product['special'] ) {   ?>
-          <div class="product-label bts"><div class="product-label-special"><?php echo $objlang->get('text_sale'); ?></div></div>
-        <?php } ?>
-        <!-- / Sale lable -->
-        <a class="img" href="<?php echo $first_product['href']; ?>">
-            <img src="<?php echo $first_product['thumb']; ?>" alt="<?php echo $first_product['name']; ?>" title="<?php echo $first_product['name']; ?>" class="img-responsive" />
-        </a>
-        <div class="action">
-           
-            <?php if( isset($categoryPzoom) && $categoryPzoom ) { $zimage = str_replace( "cache/","", preg_replace("#-\d+x\d+#", "",  $first_product['thumb'] ));  ?>
-
-            <?php if ($quickview) { ?>
-            <a class="quickview iframe-link btn-style" data-placement="top" href="<?php echo $ourl->link('themecontrol/product','product_id='.$first_product['product_id']);?>"  title="<?php echo $objlang->get('quick_view'); ?>" ><i class="zmdi zmdi-eye"></i></a>
-            <?php } ?>            
-           
-            <a data-placement="top" class="zoom info-view btn-style" title="<?php echo $first_product['name']; ?>" href="<?php echo $zimage;?>"><i class="zmdi zmdi-zoom-in"></i></a>
-            <?php } ?>
-        </div>
-
+        <div class="image">
+           <!-- Sale lable -->
+          <?php if( $first_product['special'] ) {   ?>
+            <div class="product-label bts"><div class="product-label-special"><?php echo $objlang->get('text_sale'); ?></div></div>
+          <?php } ?>
+          <!-- / Sale lable -->
+          <a class="img" href="<?php echo $first_product['href']; ?>">
+              <img src="<?php echo $first_product['thumb']; ?>" alt="<?php echo $first_product['name']; ?>" title="<?php echo $first_product['name']; ?>" class="img-responsive" />
+          </a>
+          </div>
         <div class="product-meta clearfix">
           <?php if ($first_product['rating']) { ?>
             <div class="rating clearfix">
@@ -57,21 +46,22 @@ if(!empty($first_product)) {
                     </div>
                 <?php } ?>
             </div>
+            <div class="action">
+                <button class="wishlist btn-style" type="button" data-placement="top" title="<?php echo $objlang->get("button_wishlist"); ?>" onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-heart-o"></i></button>
+
+                <?php if ( isset($quickview) && $quickview ) { ?>
+                  <a class="quickview iframe-link btn-style" data-placement="top" href="<?php echo $ourl->link('themecontrol/product','product_id='.$product['product_id']);?>"  title="<?php echo $objlang->get('quick_view'); ?>" ><i class="zmdi zmdi-eye"></i></a>
+                <?php } ?>
+
+                <button class="compare btn-style" type="button" data-placement="top" title="<?php echo $objlang->get("button_compare"); ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-random" aria-hidden="true"></i>
+                </button> 
+
+                <?php if( !isset($listingConfig['catalog_mode']) || !$listingConfig['catalog_mode'] ) { ?>
+                  <button data-loading-text="Loading..." class="cart btn-style" type="button" title="<?php echo $objlang->get("button_cart"); ?>" onclick="cart.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-shopping-basket"></i>
+                  </button>
+               <?php } ?>    
+            </div>
         </div>
-    </div>
-    
-    <div class="product-button clearfix margin-top-20">
-      <div class="pull-left">
-        <div class="cart"><button class="btn btn-outline-light btn-sm" title="<?php echo $button_cart; ?>" type="button" title="<?php echo $objlang->get("button_cart"); ?>" onclick="cart.add('<?php echo $first_product['product_id']; ?>');"><i class="zmdi zmdi-shopping-cart-plus"></i><?php echo $button_cart; ?>                
-        </button>
-        </div>
-      </div>
-      <div class="pull-right">
-        <button class="compare btn-style" type="button" title="<?php echo $objlang->get("button_compare"); ?>" onclick="compare.add('<?php echo $first_product['product_id']; ?>');"><i class="zmdi zmdi-tune"></i></button>
-        <button class="wishlist btn-style" type="button" title="<?php echo $objlang->get("button_wishlist"); ?>" onclick="wishlist.add('<?php echo $first_product['product_id']; ?>');"><i class="zmdi zmdi-favorite-outline"></i></button>
-      </div>      
-      
-    </div>
 
 </div>
 

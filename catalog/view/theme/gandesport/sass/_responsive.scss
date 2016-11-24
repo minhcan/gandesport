@@ -60,6 +60,11 @@
 
 /*$media (min-width: 992px) and (max-width: 1199px)*/
 @media (min-width: $screen-md) and (max-width: $screen-md-max){
+    .header-v2 {
+        #logo-theme {
+            padding: 38px 20px;
+        }
+    }
     .pav-verticalmenu .navbar-nav{
         padding: 0 10px;
         > li > a{
@@ -149,7 +154,7 @@
         margin-top: 20px;
     }
     .scrollup {
-        bottom: 20px;
+        bottom: 85px;
     }
     .products-block .product-col{
         border:none;
@@ -305,4 +310,19 @@
         padding: 0;
     }
     .page-pavblog-blog .pav-blogs h2{font-size: 25px;}
+}
+.carousel-tabs{
+    &:after{
+        background: #e1e1e1 none repeat scroll 0 0;
+        top: 0;
+        box-sizing: content-box;
+        content: "";
+        height: 1px;
+        // margin-left: -50%;
+        @include rtl-margin-left(-50%);
+        padding: 0 50%;
+        position: absolute;
+        width: 100%;
+        z-index: 20;
+    }
 }
