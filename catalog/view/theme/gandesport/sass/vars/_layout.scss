@@ -54,7 +54,7 @@ $megamenu-widget-title-font-size: 14px!default;
 // Vertical Menu Module
 // ========================================================================
 $mainmenu-bg: transparent !default;
-$vertical-bg:                       $white !default;
+$vertical-bg:                       #23292e !default;
 $vertical-link-margin:             0 !default;
 $vertical-link-padding:             10px 20px !default;
 $vertical-link-font-size:           14px !default;
@@ -65,20 +65,21 @@ $vertical-link-font-family:        $vertical-font-family !default;
 $vertical-link-text-transform:    initial!default;
 
 $vertical-dropdown-padding:       30px !default;
-$vertical-dropdown-bg:           $white !default;
+$vertical-dropdown-bg:           $vertical-bg !default;
 $vertical-dropdown-minwidth:        250px !default;
 
 $vertical-dropdown-link-color: #666!default;
-$vertical-dropdown-link-hover-color: $theme-color!default;
+$vertical-dropdown-link-hover-color: $orangered !default;
 $vertical-dropdown-link-font-size: 14px!default;
 $vertical-dropdown-link-font-weight: 400!default;
 $vertical-dropdown-link-line-height: 40px!default;
 $vertical-dropdown-link-transform: initial!default;
 
-$vertical-widget-title-color: $black!default;
+$vertical-widget-title-color: $white !default;
 $vertical-widget-title-margin: 0 0 20px!default;
-$vertical-widget-title-font-weight: 600!default;
+$vertical-widget-title-font-weight: 700 !default;
 $vertical-widget-title-font-size: 14px!default;
+$vertical-widget-title-padding: 15px 30px !default;
 // OffCanvas Menu
 // ========================================================================
 $offcanvas-menu-bg:                 $white !default;

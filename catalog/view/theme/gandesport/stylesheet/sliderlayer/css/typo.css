@@ -76,6 +76,19 @@
     top: 15px;
     width: 300px;
 }*/
+.tp-caption.text-100,.text-110{
+	font-size: 50px;
+    font-weight: bold;
+	font-family: "Heebo",sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+}
+.tp-caption.text-140{
+	font-size: 50px;
+    font-weight: 500;
+	font-family: "Heebo",sans-serif;
+	color: #fff;
+}
 .tp-caption.text-170{
 	font-size: 70px;
     font-weight: bold;
@@ -193,6 +206,22 @@
 	text-decoration: none;
 	color: #fd0202;
 }
+.btn-slider3 a{
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: "Droid Serif",serif;
+	background-color: #ffc32c;
+	padding: 15px 30px;
+	border-radius: 30px;
+	transition: all 0.2s ease-out 0s;
+}
+.btn-slider3 a:hover{
+	background-color: #fd0202;
+	text-decoration: none;
+}
+
 .btn-shop {
     font-size: 11px;
     font-weight: bold;

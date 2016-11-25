@@ -51,8 +51,8 @@
 
 }
 @media (min-width: $screen-md){
-// animation action product
-.product-grid{
+    // animation action product
+    .product-grid{
         .product-block{
             &:hover{
                 border: 1px solid $border-color;
@@ -134,5 +134,4 @@
             }   
         }
     }
-
 }

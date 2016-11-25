@@ -1,7 +1,7 @@
 <div class="verticalmenu-head hidden-xs hidden-sm">
-    <h4 class="vertical-title">
+    <div class="vertical-title">
         <?php echo $objlang->get("shop_by_categories"); ?>
-    </h4>
+    </div>
     <div class="pav-verticalmenu">
         <div class="navbar navbar-default">
             <div class="verticalmenu" role="navigation">

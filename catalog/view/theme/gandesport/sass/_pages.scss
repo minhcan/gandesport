@@ -90,7 +90,7 @@
     padding: 10px 15px;
     margin:7px 0 !important;
     .control-label {
-        margin: 6px 10px;
+        margin: 6px 8px;
         color:$black;
     }
     #compare-total{
@@ -376,7 +376,8 @@
                 height: auto;
             }
             .product-meta {
-                @include rtl-text-align-left();
+                // @include rtl-text-align-left();
+                text-align-last: center;
                 @include rtl-float-left();
                 @include rtl-padding-left(30px);
                 width: 70%;

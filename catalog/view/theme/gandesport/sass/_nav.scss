@@ -278,7 +278,12 @@ $hot-color: #ff2238 !default;
 .verticalmenu-head {
     position: relative;
     .vertical-title {
-        margin: 0 0 20px;
+        font-size: $vertical-widget-title-font-size;
+        font-weight: $vertical-widget-title-font-weight;
+        color: $vertical-widget-title-color;
+        background: $orange none repeat scroll 0 0;
+        padding: $vertical-widget-title-padding;
+        text-transform: uppercase;
     }
     &:hover {
         .pav-verticalmenu {
@@ -287,6 +292,7 @@ $hot-color: #ff2238 !default;
     }
 }
 .pav-verticalmenu {
+    background-color: $vertical-bg;
     ul ul {
         margin: 0;
         padding: 0;
@@ -317,23 +323,26 @@ $hot-color: #ff2238 !default;
             }
             &:hover{
                 > a{
-                    color:$white;
+                    color: $orangered;
                 }
                 i{
                     @include opacity(1);
                 }
                 &:before{
-                    background: $brand-success;
+                    // background: $brand-success;
                     width: 100%;
                 }
             }
             > a {
-                padding: 12px;
-                font-size: 16px;
-                border-top: 1px dotted $border-color;
+                padding: 15px 30px;
+                font-size: $vertical-widget-title-font-size;
+                border-top: 1px solid #4a4f53;
+                font-weight: 400;
+                text-transform: capitalize;
+                color: $theme-color;
                 .caret {
                     position: absolute;
-                    @include rtl-right(2px);
+                    @include rtl-right(20px);
                     top: 40%;
                     border-top: 1px solid #999;
                     @include rtl-border-right(1px solid #999);
@@ -364,10 +373,13 @@ $hot-color: #ff2238 !default;
                 li a {
                     font-size: $vertical-dropdown-link-font-size;
                     line-height: $vertical-dropdown-link-line-height;
-                    border-bottom: 1px dotted $border-color;
+                    border-bottom: 1px solid #4a4f53;
                     display: block;
+                    font-weight: $vertical-dropdown-link-font-weight;
+                    text-transform: $vertical-dropdown-link-transform;
                     &:hover {
                         color: $vertical-dropdown-link-hover-color;
+                        text-decoration: none;
                     }
                 }
                 li:last-child{
