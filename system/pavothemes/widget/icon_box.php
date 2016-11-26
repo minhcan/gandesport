@@ -79,9 +79,8 @@ class PtsWidgetIcon_box extends PtsWidgetPageBuilder {
 	                    'name' => 'background',
 	                    'options' => array(  'query' => array(
 	                        array('id' => '', 'name' => $this->l('None')),
-                          	array('id' => 'bg-soft-yellow', 'name' => $this->l('Soft yellow')),
-                            array('id' => 'bg-box-white', 'name' => $this->l('Box white')),
-                            array('id' => 'bg-lime-green', 'name' => $this->l('Lime green')),
+                          	array('id' => 'feature-box-v1 left', 'name' => $this->l('feature box v1')),
+                            array('id' => 'feature-box-v1 right', 'name' => $this->l('feature box v2')),
 	                    ),
 	                    'id' => 'id',
 	                    'name' => 'name' ),

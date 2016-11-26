@@ -1,33 +1,42 @@
 //newleter
-.form-newsletter {
-    .description {
-        padding:10px 0;
-    }
-	.email {
-        background: none;
-        border:none;
-	}
-    .input-group{
-        border: 1px solid #8e644c;
-        @include border-radius(38px);
-        .btn{
-            border: none;
-            @include border-radius(38px);
-            padding: 5px 30px;
-            font-size: 14px;
+.pav-newsletter {
+    width: 100%;
+    max-width: 570px;
+    margin: 0 auto;
+    .form-email {
+        padding: 0px 20px;
+        position: relative;
+        .valid {
+            position: absolute;
+            top: 55px;
+            width: calc(100% - 40px);
+            z-index: 2;
+            .alert {
+                width: auto;
+                margin-top: 20px;
+                @include rtl-text-align-left();
+            }
         }
     }
-}
-
-.valid {
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    z-index: 10;
-    @include rtl-left(0);
-    .alert {
-        width: auto;
-        margin-top: 20px;
-        @include rtl-text-align-left();
+    .submit-subscribe {
+        width: 120px;
+        .btn-v2 {
+            width: 100%;
+            font-size: 12px;
+            height: 50px;
+            border-radius: 30px;
+            background-color: #e40613;
+            color: $white;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+    .email-subscribe {
+        width: calc(100% - 125px);
+        .form-control {
+            border: 1px solid #e1e1e1;
+            border-radius: 30px;
+            height: 50px;
+        }
     }
 }

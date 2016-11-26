@@ -1,18 +1,3 @@
-<!-- <div class="copyright">
-    <div class="container clearfix">
-        <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div class="text-center">
-               <?php if( $helper->getConfig('enable_custom_copyright', 0) ) { ?>
-                  <?php echo html_entity_decode($helper->getConfig('copyright')); ?>
-                <?php } else { ?>
-                  <?php echo $powered; ?>.
-                <?php } ?>
-            </div>
-          </div>
-        </div>       
-    </div>
-</div> -->
 <div class="copyright">
     <div class="container clearfix">
       <div class="inner">

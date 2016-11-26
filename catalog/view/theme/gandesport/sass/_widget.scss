@@ -40,22 +40,25 @@
 }
 .feature-box {
     /* overflow: hidden; */
-    &:hover {
-        .fbox-icon {
-            -webkit-animation: rotateleft 1.5s linear infinite forwards 0.3s;
-            -moz-animation: rotateleft 1.5s linear infinite forwards 0.3s;
-            -o-animation: rotateleft 1.5s linear infinite forwards 0.3s;
-            -ms-animation: rotateleft 1.5s linear infinite forwards 0.3s;
-            animation: rotateleft 1.5s linear infinite forwards 0.3s;
-            @include rotate(360deg)
-        }
-    }
     .fbox-icon {
-        font-size: 36px;
-        color: $white;
-        @include rotate(0deg);
-        @include transition(all 0.3s ease-in-out 0s);
-        text-align: center;      
+        @include rtl-float-left();
+        text-align: center;
+        display: block; 
+        @include transition(all 0.5s ease-in-out);
+    }
+}
+.feature-box-v1{
+    min-height: 120px;
+    padding: 40px 30px 0;
+    &.left{  background: transparent url("#{$image-theme-path}support1.jpg");}
+    &.right{  background: transparent url("#{$image-theme-path}support2.jpg");}
+    &:hover {      
+        .fbox-icon {
+            transform: rotateY(-360deg);
+            -o-transform: rotateY(-360deg);
+            -moz-transform: rotateY(-360deg);
+            -webkit-transform: rotateY(-360deg);
+        }
     }
     .heading {
         color: $white;
@@ -72,8 +75,10 @@
     .fbox-body {
         overflow: hidden;
         color: $white;
-        text-align: center;
-        font-size: 16px; 
+        font-weight: bold;
+        text-transform: uppercase;
+        @include rtl-padding-left(100px);
+        font-size: 21px; 
     }
     .description{
         line-height: 20px;
@@ -94,7 +99,6 @@
             }
         }
     }
-
 }
 
 @media (min-width: $screen-sm-max){
@@ -590,6 +594,8 @@
                 .text2{
                     color: $orangered;
                 }
+                .text6{color: #7c7c7c; font-size: 18px;}
+                .text7{color: #030303; font-size: 30px;}
             }
             .widget-heading, .text3{
                 font-style: italic;
