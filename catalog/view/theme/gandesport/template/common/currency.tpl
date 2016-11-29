@@ -10,7 +10,7 @@
     <?php } ?>
     <?php } ?>
     <i class="fa fa-angle-down"></i></button>
-    <div class="dropdown-menu">
+    <div class="dropdown-menu dropdown-menu-right">
         <ul class="links">
           <?php foreach ($currencies as $currency) { ?>
           <?php if ($currency['symbol_left']) { ?>

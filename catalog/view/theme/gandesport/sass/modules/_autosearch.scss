@@ -3,7 +3,7 @@
     color: $theme-color-default;
     position: relative;
     //@include border-radius(3px);
-    @include rtl-margin (10px, 10px, 10px, 10px);
+    margin: 10px;
     .input-group-btn {
         &:after {
             line-height: 38px;
@@ -51,7 +51,7 @@
     }
     .button-search {
         position: absolute;
-        @include rtl-right(0);
+        @include rtl-right(-1px);
         border: 0;
         font-size: 12px;
         text-align: center;

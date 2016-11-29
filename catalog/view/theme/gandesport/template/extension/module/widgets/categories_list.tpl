@@ -1,7 +1,12 @@
 <div class="list-category <?php echo $addition_cls; ?> clearfix">
     <div class="img-category">
         <?php if( $show_title ) { ?>
+        <div class="widget-heading panel-heading">
             <h3 class="heading-title <?php echo $background;?>"><?php echo $heading_title?></h3>
+            <?php if( $title_description ) { ?>
+            <span class="desciption-title"><?php echo strip_tags(html_entity_decode($title_description, ENT_QUOTES, 'UTF-8')); ?></span>
+           <?php } ?>
+        </div>
         <?php } ?>
         <div class="text-center"><img class="img-responsive" alt="img" src="<?php echo $icon; ?>"></div>
     </div>

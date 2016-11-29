@@ -20,15 +20,17 @@
                                 <?php } ?>
                             </div> 
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 column">
-                                <div class="panel-heading">
-                                    <h5 class="panel-title"><?php echo $text_extra; ?></h5>
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title"><?php echo $text_extra; ?></h5>
+                                    </div>
+                                    <ul class="list-unstyled">
+                                      <li><a href="<?php echo $manufacturer; ?>"><?php echo $text_manufacturer; ?></a></li>
+                                      <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
+                                      <li><a href="<?php echo $affiliate; ?>"><?php echo $text_affiliate; ?></a></li>
+                                      <li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li>
+                                    </ul>
                                 </div>
-                                <ul class="list-unstyled">
-                                  <li><a href="<?php echo $manufacturer; ?>"><?php echo $text_manufacturer; ?></a></li>
-                                  <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
-                                  <li><a href="<?php echo $affiliate; ?>"><?php echo $text_affiliate; ?></a></li>
-                                  <li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li>
-                                </ul>
                             </div>                                                 
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 column">
                                 <div class="panel">
@@ -44,14 +46,16 @@
                                 </div>
                             </div>  
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 column">
-                                <div class="panel-heading">
-                                    <h5 class="panel-title"><?php echo $text_service; ?></h5>
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title"><?php echo $text_service; ?></h5>
+                                    </div>
+                                    <ul class="list-unstyled">
+                                      <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
+                                      <li><a href="<?php echo $return; ?>"><?php echo $text_return; ?></a></li>
+                                      <li><a href="<?php echo $sitemap; ?>"><?php echo $text_sitemap; ?></a></li>
+                                    </ul>
                                 </div>
-                                <ul class="list-unstyled">
-                                  <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
-                                  <li><a href="<?php echo $return; ?>"><?php echo $text_return; ?></a></li>
-                                  <li><a href="<?php echo $sitemap; ?>"><?php echo $text_sitemap; ?></a></li>
-                                </ul>
                             </div>
                         </div>
                     </div>

@@ -83,6 +83,13 @@
 	color: #fff;
 	text-transform: uppercase;
 }
+.tp-caption.text-130{
+	font-size: 24px;
+    font-weight: 400;
+	font-family: "Heebo",sans-serif;
+	color: #000000;
+	text-transform: uppercase;
+}
 .tp-caption.text-140{
 	font-size: 50px;
     font-weight: 500;
@@ -95,6 +102,21 @@
 	font-family: "Heebo",sans-serif;
 	color: #fff;
 }
+.tp-caption.text-180{
+	font-size: 90px;
+    font-weight: bold;
+	font-family: "Heebo",sans-serif;
+	color: #23292e;
+	text-transform:  uppercase;
+}
+.tp-caption.text-190{
+	font-size: 50px;
+    font-weight: bold;
+	font-family: "Heebo",sans-serif;
+	color: #00b4ff;
+	text-transform:  uppercase;
+}
+
 .tp-caption.text-14 i{
 	color: #5bcb60;
 	padding-right: 20px;
@@ -219,6 +241,23 @@
 }
 .btn-slider3 a:hover{
 	background-color: #fd0202;
+	text-decoration: none;
+}
+
+.btn-slider4 a{
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #23292e;
+	font-family: "Droid Serif",serif;
+	padding: 15px 30px;
+	border: 2px solid #030303;
+	transition: all 0.2s ease-out 0s;
+}
+.btn-slider4 a:hover{
+	color: #00b4ff;
+	border: 2px solid #00b4ff;
+	border-radius: 30px;
 	text-decoration: none;
 }
 

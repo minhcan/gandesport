@@ -3,7 +3,7 @@
 	$span = 12/$col;
 	$objlang = $this->registry->get('language');
 ?>
-<div class="feature-category feature-category-v1 panel panel-warning <?php echo $addition_cls?>">
+<div class="feature-category <?php if(!empty($stylepp)){echo 'feature-category-'. $stylepp;} ?> panel panel-warning <?php echo $addition_cls?>">
 	<?php if( $show_title ) { ?>
 	<div class="widget-heading panel-heading">
 		<h3 class="panel-title"><?php echo $heading_title?></h3><br>

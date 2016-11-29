@@ -24,7 +24,7 @@
     <div class="dropdown-toggle-button" data-target=".toggle-overlay-container">x </div>
 </div>
 <!-- header -->
-<header class="header header-v3">
+<header class="header header-v4">
     <nav id="topbar" class="topbar">
         <div class="container-fluid">
             <div class="inner">
@@ -57,9 +57,8 @@
                         ?>
                     </div>
                     <!--The End autosearch-->
-                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                      <div class="quick-settings">
-                        <div class="quick-setting user pull-right">
+                    <div class="quick-settings col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="quick-setting user popup-links">
                             <div class="btn btn-link dropdown-toggle" data-toggle="dropdown">
                                 <span class=""><?php echo $text_account; ?></span><i class="fa-fw fa fa-angle-down"></i>
                             </div>
@@ -76,9 +75,8 @@
                               </ul>
                             </div>
                         </div>  
-                        <div class="quick-currency pull-right"><?php echo $currency; ?></div> 
-                        <div class="quick-language pull-right"><?php echo $language; ?></div>
-                      </div>
+                        <div class="quick-currency popup-links"><?php echo $currency; ?></div> 
+                        <div class="quick-language popup-links"><?php echo $language; ?></div>
                     </div>
                 </div>
             </div>
@@ -148,4 +146,5 @@
   ?>
 
 <div class="maincols">
+
 

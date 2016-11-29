@@ -72,6 +72,21 @@ class PtsWidgetFeatured_category extends PtsWidgetPageBuilder {
 	                    'default'=> 4,
 	                    'desc'	=> '',
 	                ),
+
+	                array(
+	                    'type' => 'select',
+	                    'label' => $this->l( 'Style' ),
+	                    'name' => 'stylepp',
+	                    'options' => array(  'query' => array(
+	                        array('id' => '', 'name' => $this->l('None')),
+                          	array('id' => 'v1', 'name' => $this->l('Style v1')),
+                            array('id' => 'v2', 'name' => $this->l('Style v2')),
+                            array('id' => 'v3', 'name' => $this->l('Style v3')),
+	                    ),
+	                    'id' => 'id',
+	                    'name' => 'name' ),
+	                    'default' => "",
+	                ),
 	            ),
 	      		 'submit' => array(
 	                'title' => $this->l('Save'),

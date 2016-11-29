@@ -148,9 +148,9 @@ td, th {
 // --------------------------------------------------
 
 .carousel-controls {
-    @include rtl-right(42px);
+    @include rtl-right(30px);
     position: absolute;
-    top: -100px;
+    top: -90px;
     z-index: 90;
 }
 .carousel-controls-v1 {
@@ -173,6 +173,7 @@ td, th {
         }
     }
 }
+
 .parallax {
   background-size: cover;
   background-attachment: fixed;

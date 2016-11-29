@@ -47,12 +47,23 @@ class PtsWidgetCategories_list extends PtsWidgetPageBuilder {
                     'desc' => '',
                     'default' => '3,4,5,6,7,8',
                 ),
-                 array(
-                'type'  => 'image',
-                'label' => $this->l('Icon'),
-                'name'  => 'banner_img',
-                'default'=> '',
-                'desc'  => 'Put image folder in the image folder ROOT_SHOP_DIR/image/'
+                array(
+                    'type'  => 'textarea',
+                    'label' => $this->l('Title Description'),
+                    'name'  => 'title_description',
+                    'default'=> '',
+                    'lang'  => true,
+                    'cols' => 40,
+                    'rows' => 10,
+                    'value' => '',
+                    'autoload_rte' => true
+                ),
+                array(
+                    'type'  => 'image',
+                    'label' => $this->l('Icon'),
+                    'name'  => 'banner_img',
+                    'default'=> '',
+                    'desc'  => 'Put image folder in the image folder ROOT_SHOP_DIR/image/'
                 ),
                 array(
                     'type'  => 'text',
@@ -117,6 +128,7 @@ class PtsWidgetCategories_list extends PtsWidgetPageBuilder {
 		$t  = array(
             'widget_name' => 'categories',
             'show_title' => 1,
+            'title_description' => 'This is title description',
             'addition_cls' => 'prefix_class',
             'catids' => '20,18,25',
             'link' => '#',
@@ -159,6 +171,7 @@ class PtsWidgetCategories_list extends PtsWidgetPageBuilder {
         }
 
         $setting['icon'] = $image;
+        $setting['title_description'] = isset($setting['title_description_'.$languageID])?($setting['title_description_'.$languageID]): '';
 
 		$output = array(
             'type' => 'categories_list',

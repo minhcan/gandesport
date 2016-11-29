@@ -58,9 +58,15 @@
     #topbar {
         .quick-setting{
             .dropdown-menu{
-                left: 0;
-                right: auto;
+                right: 0;
+                left: auto;
             }
+        }
+    }
+    #topbar{
+        .dropdown-menu-right {
+            left: 0;
+            right: auto;
         }
     }
     #offcanvasmenu .navbar-nav > li li.dropdown-submenu li.dropdown-submenu > .click-canavs-menu {

@@ -44,32 +44,21 @@
         @include rtl-float-left();
         text-align: center;
         display: block; 
-        @include transition(all 0.5s ease-in-out);
+       
+        background-color: #e40613;
+        padding-top: 40px;
+        min-width: 120px;
+        min-height: 120px;  
+        .img{ @include transition(all 0.5s ease-in-out);}
     }
 }
-.feature-box-v1{
-    min-height: 120px;
-    padding: 40px 30px 0;
-    &.left{  background: transparent url("#{$image-theme-path}support1.jpg");}
-    &.right{  background: transparent url("#{$image-theme-path}support2.jpg");}
-    &:hover {      
+.feature-box-v1,.feature-box-v2 {
         .fbox-icon {
-            transform: rotateY(-360deg);
+    &:hover {      
+            .img{transform: rotateY(-360deg);
             -o-transform: rotateY(-360deg);
             -moz-transform: rotateY(-360deg);
-            -webkit-transform: rotateY(-360deg);
-        }
-    }
-    .heading {
-        color: $white;
-        font-family: $font-family-base;
-        font-size: 10px;
-        font-weight: bold;
-        text-transform: uppercase;
-        margin: 0;
-        span{
-            color:$theme-color;
-            @include rtl-padding-right(5px);
+            -webkit-transform: rotateY(-360deg);}
         }
     }
     .fbox-body {
@@ -77,27 +66,24 @@
         color: $white;
         font-weight: bold;
         text-transform: uppercase;
-        @include rtl-padding-left(100px);
-        font-size: 21px; 
-    }
-    .description{
-        line-height: 20px;
-        max-width: 200px;
-    }
-    .htmlcontent{
-        h5{
-            position: relative;
-            margin-bottom: 25px;
-            &:before{
-                content: ".....";
-                position: absolute;
-                @include rtl-left(0);
-                bottom: -15px;
-                font-size: 13px;
-                color:#c0c0c0;
-                font-weight: normal;
-            }
+        padding: 39px;
+        font-size: 21px;
+        min-height: 120px;
+        text-align: center;
+        .heading{
+            color: $white; 
+            font-size: 21px;
         }
+    }
+}
+.feature-box-v1{
+    .fbox-body {        
+        background: transparent url("#{$image-theme-path}support1.jpg"); 
+    }
+}
+.feature-box-v2{
+    .fbox-body {        
+        background: transparent url("#{$image-theme-path}support2.jpg");
     }
 }
 
@@ -152,6 +138,33 @@
         }
     }
 }
+.carousel-tabs{
+    &:after{
+        background: #e1e1e1 none repeat scroll 0 0;
+        top: 0;
+        box-sizing: content-box;
+        content: "";
+        height: 1px;
+        @include rtl-margin-left(-50%);
+        padding: 0 50%;
+        position: absolute;
+        width: 100%;
+        z-index: 20;
+    }
+    &:before{
+        background: #e1e1e1 none repeat scroll 0 0;
+        bottom: 0;
+        box-sizing: content-box;
+        content: "";
+        height: 1px;
+        @include rtl-margin-left(-50%);
+        padding: 0 50%;
+        position: absolute;
+        width: 100%;
+        z-index: 20;
+    }
+}
+
 .product-tabs {
     .container,.tab-content{
         position: relative;
@@ -212,9 +225,11 @@
 }
 //widget
 .feature-category {
+    .item-category{
+        position: relative;
+    } 
     .caption{
         padding-top: 20px;
-        position: relative;
         h4{ 
             a{ 
                 color: $headings-color;
@@ -232,9 +247,82 @@
             position: absolute;
             width: 2px;
         }
-    }  
+    } 
 }
- 
+/* category feature home 5*/
+.feature-category-v1{
+    .caption{ 
+        left:50%;
+        margin: 0 -50% 0 0;
+        padding: 0;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        transition: all 0.4s ease 0s;
+        top: 70%;
+        color: $white;
+         h4,.category-items{
+            a{color: $white;}
+        }
+    }
+    .no-space-row [class^="col-"],
+    .no-space-row [class*="col-"] {
+        padding: 0;
+    }
+    .no-space-row {
+        .row{
+            margin: 0;
+        }
+    }
+}
+.feature-category-v2{
+    .widget-heading{
+        &.panel-heading{
+            @include rtl-padding(0, 0, 0, 400px);
+            &:before {
+              @include rtl-left (300px);
+            }
+        }
+    }
+    .panel-title{color: $white;}
+    .caption{ 
+        left:50%;
+        padding: 0;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        transition: all 0.4s ease 0s;
+        margin: 20% -50% 0 0;
+        h4,.category-items{
+            a{color: #ababab; font-weight: 400;}
+        }
+        &:before{
+            background: transparent;
+        }
+        .category-items{display: none;}
+    }
+}
+.feature-category-v3{
+    h4,.category-items{
+        a{
+            color: #ababab; 
+            font-weight: 400;
+        }
+    }
+    .caption{
+        left:50%;
+        padding: 0;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        transition: all 0.4s ease 0s;
+        margin: 20% -50% 0 0;
+        h4,.category-items{
+            a{color: #ababab; font-weight: 400;}
+        }
+        &:before{
+            background: transparent;
+        }
+        .category-items{display: none;}
+    }
+}
 /* category feature home 5*/
 /* .item-category{
     position: relative;
@@ -480,7 +568,11 @@
         z-index: 20;
     }
 }
-
+.list-category {
+    .img-category {
+        position: relative;
+    }
+}
 /* Gallery */
 .widget-gallery-list{
     text-align: center;
@@ -596,15 +688,7 @@
                 }
                 .text6{color: #7c7c7c; font-size: 18px;}
                 .text7{color: #030303; font-size: 30px;}
-            }
-            .widget-heading, .text3{
-                font-style: italic;
-                font-weight: 400;
-                color: $white;
-                font-size: 40px;
-                @media (max-width: 768px) {
-                    font-size: 30px;
-                }
+                .textv10{font-size: 18px;}
             }
             .text4{
                 font-style: italic;

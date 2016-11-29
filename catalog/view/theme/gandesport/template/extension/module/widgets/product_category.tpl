@@ -36,7 +36,7 @@
 	<div class="panel-body widget-content <?php echo $addition_cls; ?>">
 		<div class="products-row">
 			<?php foreach ($products as $product) { ?>
-			<div class="w-product clearfix col-lg-<?php echo $cols;?> col-md-<?php echo $cols;?> col-sm-12 col-xs-12">
+			<div class="w-product clearfix col-lg-<?php echo $cols;?> col-md-<?php echo $cols;?> col-sm-6 col-xs-12">
 				<?php require( $productLayout );  ?>   
 			</div>
 			<?php } ?>

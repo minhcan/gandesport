@@ -8,7 +8,7 @@
     <?php } ?>
     <?php } ?>
     <i class="fa fa-angle-down"></i></button>
-    <div class="dropdown-menu">
+    <div class="dropdown-menu dropdown-menu-right">
         <ul class="links">
           <?php foreach ($languages as $language) { ?>
           <li><button class="language-select" type="button" name="<?php echo $language['code']; ?>"><img src="catalog/language/<?php echo $language['code']; ?>/<?php echo $language['code']; ?>.png" alt="<?php echo $language['name']; ?>" title="<?php echo $language['name']; ?>" /> <?php echo $language['name']; ?></button></li>

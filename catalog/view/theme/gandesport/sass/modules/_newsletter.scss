@@ -29,6 +29,10 @@
             color: $white;
             font-weight: bold;
             text-transform: uppercase;
+            @include transition(all 0.5s ease 0s);
+            &:hover{
+                color: $black;
+            }
         }
     }
     .email-subscribe {

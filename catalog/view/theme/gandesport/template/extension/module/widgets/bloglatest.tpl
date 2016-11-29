@@ -3,7 +3,7 @@
     $columns_count  = 1;
 ?>
 <?php if( !empty($blogs) ) { ?>
-<div id="blog-carousel" class="no-space-row widget-blogs hidden-xs  latest-posts panel panel-default <?php echo $addition_cls;?> <?php if ( isset($stylecls)&&$stylecls) { ?>box-<?php echo $stylecls; ?><?php } ?>">
+<div id="blog-carousel" class="no-space-row widget-blogs latest-posts panel panel-default <?php echo $addition_cls;?> <?php if ( isset($stylecls)&&$stylecls) { ?>box-<?php echo $stylecls; ?><?php } ?>">
 	<?php if( $show_title ) { ?>
 	<div class="widget-heading panel-heading">
 		<h3 class="panel-title"><?php echo $heading_title?></h3>

@@ -80,7 +80,7 @@ class PtsWidgetIcon_box extends PtsWidgetPageBuilder {
 	                    'options' => array(  'query' => array(
 	                        array('id' => '', 'name' => $this->l('None')),
                           	array('id' => 'feature-box-v1 left', 'name' => $this->l('feature box v1')),
-                            array('id' => 'feature-box-v1 right', 'name' => $this->l('feature box v2')),
+                            array('id' => 'feature-box-v2 right', 'name' => $this->l('feature box v2')),
 	                    ),
 	                    'id' => 'id',
 	                    'name' => 'name' ),
